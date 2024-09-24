@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { add } from './utils/stringCalculator';
+import './App.css';
+
 
 function App() {
     const [input, setInput] = useState("");
@@ -28,7 +30,7 @@ function App() {
             <button onClick={handleCalculate}>Calculate</button>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            {result !== null && <p>Result: {result}</p>}
+            {<p>Here is the Calculated Result: {result}</p>}
         </div>
     );
 }

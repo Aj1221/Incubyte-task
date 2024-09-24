@@ -1,38 +1,97 @@
 .App {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  align-items: center;
+  padding: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #2a9d8f;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1:hover {
+  transform: scale(1.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  padding: 12px 20px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #264653;
+  border-radius: 30px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2a9d8f;
+  box-shadow: 0 4px 8px rgba(42, 157, 143, 0.3);
+}
+
+button {
+  background-color: #2a9d8f;
   color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #264653;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(38, 70, 83, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
+
+p {
+  font-size: 18px;
+  color: #264653;
+  margin-top: 30px;
+  margin-right: 14%;
+}
+
+p.result {
+  font-weight: bold;
+  font-size: 24px;
+  color: #2a9d8f;
+}
+
+p.error {
+  color: #e63946;
+}
+
+footer {
+  margin-top: 30px;
+  color: #a8dadc;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2a9d8f;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e63946;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+
+
+
